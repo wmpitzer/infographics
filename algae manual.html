@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge" />
+	<title>algae manual</title>
+	<style>
+		html {
+			height:100%;
+		}
+		body {
+			background-color:#FFF;
+			margin:0;
+			height:100%;
+		}
+	</style>
+	<!-- copy these lines to your document head: -->
+
+	<meta name="viewport" content="user-scalable=yes" />
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+ 
+  <script type="text/javascript">
+
+  function myCallback(hypeDocument, element, event) {
+    if (isScalePossible()){
+      window.myHypeContainerId = hypeDocument.documentId();
+      $('#' + window.myHypeContainerId).css({
+        '-moz-transform-origin': '0% 0%',
+        '-webkit-transform-origin': '0% 0%',
+        '-ms-transform-origin': '0% 0%',
+        '-o-transform-origin': '0% 0%',					
+        'transform-origin': '0% 0%',
+        margin: 0
+      });
+
+      scaleSite();
+      $(window).resize(scaleSite);
+    }
+    return true;
+  }
+
+  if("HYPE_eventListeners" in window === false) {
+    window.HYPE_eventListeners = Array();
+  }
+  window.HYPE_eventListeners.push({"type":"HypeDocumentLoad", "callback":myCallback});
+
+
+  function scaleSite()
+  {
+  	var hypeContainer = $('#' + window.myHypeContainerId);
+    var containerWidth = hypeContainer.width();
+    var containerHeight = hypeContainer.height();
+    var parentWidth = hypeContainer.parent().width();
+    var parentHeight = hypeContainer.parent().height();
+    var scaleWidth = parentWidth / containerWidth;
+    var scaleHeight = parentHeight / containerHeight;
+    var scale = Math.min(scaleWidth, scaleHeight);
+    var left = (containerWidth * scale < parentWidth) ? ((parentWidth - (containerWidth * scale)) / 2) + 'px' : '0px';
+    var top = (containerHeight * scale < parentHeight) ? ((parentHeight - (containerHeight * scale)) / 2) + 'px' : '0px' ;
+    hypeContainer.css({
+        "-moz-transform"    : "scale("+scale+")",
+        "-webkit-transform" : "scale("+scale+")",
+        "-ms-transform"     : "scale("+scale+")",
+        "-o-transform"      : "scale("+scale+")",
+        "transform"         : "scale("+scale+")",
+        "left" : left,
+        "top" : top
+    });
+  }
+
+  function isScalePossible() 
+  {
+    can = 'MozTransform' in document.body.style;
+    if(!can) can = 'webkitTransform' in document.body.style;
+    if(!can) can = 'msTransform' in document.body.style;
+    if(!can) can = 'OTransform' in document.body.style;
+    if(!can) can = 'transform' in document.body.style;
+    if(!can) can = 'Transform' in document.body.style;
+    return can;
+  }
+
+</script>
+
+	<!-- end copy -->
+  </head>
+  <body>
+	<!-- copy these lines to your document: -->
+
+	<div id="algaemanual_hype_container" class="HYPE_document" style="margin:auto;position:relative;width:1920px;height:1080px;overflow:hidden;">
+		<script type="text/javascript" charset="utf-8" src="algae%20manual.hyperesources/algaemanual_hype_generated_script.js?79357"></script>
+	</div>
+
+	<!-- end copy -->
+	
+
+
+	<!-- text content for search engines: -->
+
+	<div style="display:none" aria-hidden=true>
+
+		<div>Moderate
+</div>
+		<div>Proactive Control Strategy</div>
+		<div>Pelagic
+</div>
+		<div>Low</div>
+		<div>Cyanobacteria</div>
+		<div>Reactive Control Strategy</div>
+		<div>Long</div>
+		<div>Both
+</div>
+		<div>Taste and Odor (T&O)</div>
+		<div>Low</div>
+		<div>Designing source water monitoring systems using this three-tier framework ensures monitoring goals are established and limits scenarios where resources are used to monitor parameters in a single tier. It offers robust early warning while conserving resources. Monitoring parameters have various advantages and shortcomings that are presented in a review of the literature. The performance of the early warning parameters in surveyed utilities grouped by the tier method is shown in the survey response graphic.
+ 
+Given the complexity and variability of source water conditions that promote cyanobacterial blooms, alert thresholds for monitoring parameters are vastly site-specific. Surveyed utilities reported a wide range of alert thresholds for chlorophyll-a (10-50 μg/L), cell counts (200-100,000 cells/mL), phycocyanin fluorescence (2-5 RFU), T&O compounds (8-10 ng/L; 5-30 TON), and cyanotoxins (0.3-5 μg/L).
+
+
+Utilities should internally develop alert thresholds for select parameters by compiling and analyzing monitoring data. Alert thresholds can also be established by coupling parameters in the different monitoring Tiers, e.g., ATP/cell, ATP/ chlorophyll-a, chlorophyll-a/cell, etc. When designing an early warning system, it is essential to consider the frequency and type of blooms at the source, reliability of the signal, staffing, analytical capabilities, and cost, such as those shown in EWA Tools Summary Table.</div>
+		<div>High</div>
+		<div>Pelagic
+</div>
+		<div>Visual monitoring</div>
+		<div>Low
+</div>
+		<div>© Copyright 2022 by The Water Research Foundation. All rights reserved.Permission to copy must be obtained from The Water Research Foundation.WRF Project Number: 4912
+
+This web tool was prepared by the organization(s) named above as an account of work sponsored by The Water Research Foundation. Neither The Water Research Foundation, members of The Water Research Foundation, the organization(s) named below, nor any person acting on their behalf: (a) makes any warranty, express or implied, with respect to the use of any information, apparatus, method, or process disclosed in this report or that such use may not infringe on privately owned rights; or (b) assumes any liabilities with respect to the use of, or for damages resulting from the use of, any information, apparatus, method, or process disclosed in this report.
+</div>
+		<div>TON</div>
+		<div>High
+</div>
+		<div>ELISA</div>
+		<div>Short</div>
+		<div>X</div>
+		<div>></div>
+		<div>Moderate</div>
+		<div>Green algae</div>
+		<div>Airplanes</div>
+		<div>Benthic cyanobacteria occur as floating mats or biofilms attached to sediments, physical structures, rocks, and substrates. Dormant mat-forming genera include Oscillatoria, Lyngbya, Phormidium, Leptolyngbya, Microcoleus, and Schizothriz.
+</div>
+		<div>Pelagic</div>
+		<div><</div>
+		<div>Cyanobacteria
+</div>
+		<div>Benthic</div>
+		<div>Source control strategies can be implemented to inhibit planktonic or benthic cyanobacteria growth before metabolites are generated (i.e., cyanotoxins or T&O compounds). Early detection of cyanobacteria is critical to successful proactive source control management. A variety of in-lake/reservoir control measures are implemented to reduce the abundance of cyanobacterial biomass or decrease the amount of available phosphorous (P). Source control strategies can be classified into chemical, mechanical/physical, and biological methods.</div>
+		<div>Early warning monitoring programs require extensive financial and staff resources to perform sampling, laboratory analyses, and data interpretation. Surveyed utilities have incorporated various parameters into their programs and reported varying levels of success. Early warning monitoring goals for cyanobacteria can be divided into three tiers:</div>
+		<div>Green algae
+</div>
+		<div>Both
+</div>
+		<div>^
+</div>
+		<div>Early Warning Systems</div>
+		<div>Simple plants that contain photosynthetic pigments and which usually are microscopic and aquatic in form and habit; green algae do not produce cyanotoxins or taste and odor compounds.</div>
+		<div>
+</div>
+		<div>Naturally occurring photosynthetic microorganisms that are found in aquatic environments, including lakes, streams, rivers, reservoirs, ponds, and freshwater-influenced estuaries; often referred to as “blue-green algae” because of intracellular phycocyanin (blue) pigments; some (not all) species may produce nuisance metabolites (i.e., cyanotoxins, taste and odor compounds).</div>
+		<div>Acknowledgements
+Brian Cragin, Principal Graphic Designer - Hazen and Sawyer
+</div>
+		<div>Toxins that are generated by some cyanobacterial species, commonly referred to as algal toxins. They are classified as neurotoxins (causing nerve damage) e.g., anatoxins; hepatotoxins (causing liver damage) e.g., microcystins, nodularin, saxitoxin and cylindrospermopsins; dermatotoxins (causing skin irritation) e.g., lyngbyatoxins; and cytotoxins (causing cell damage).</div>
+		<div>Nutrient Sequestration</div>
+		<div>Most of the control strategies presented above provide only temporary relief of symptoms of water quality degradation such as anoxia, redox-dependent nutrient and contaminant loading, and cyanobacterial biomass. Reduction of external nutrient inputs should still be a primary focus of restoration efforts as treatment benefits are commonly disrupted by continued external nutrient inputs. Therefore, an assessment of external versus internal nutrient roles in source water impairment should be conducted before selecting and implementing control strategies.</div>
+		<div>WRF Staff
+John Albert, MPA, Chief Research Officer
+Djanette Khiari, Ph.D., Research Program Manager
+Erin Swanson, Research Program Manager
+</div>
+		<div>A growth curve provides information on the algal or cyanobacterial cell density. In laboratory conditions, cells are cultured in nutrient-rich growth media. The growth curve consists of four phases including:</div>
+		<div>Phycocyanin extraction</div>
+		<div>Algae</div>
+		<div>Cyanobacteria</div>
+		<div>
+WRF
+
+www.waterrf.org
+info@waterrf.org
+
+1199 North Fairfax St. Suite 900
+Alexandria, VA
+22314-1445
+571.384.2100
+
+6666 West Quincy Ave. Denver, CO
+80235-3098
+303.347.6100
+</div>
+		<div>Chemical treatment methods consist of algaecides and nutrient sequestering chemicals frequently applied by boat. Copper- and peroxide-based algaecides damage cellular integrity and cause cell death, limiting bloom expansion in a drinking water source. Nutrient sequestering additives such as alum, polyaluminum chloride (PACl), iron salts, and bentonite clays bind P in the water column, creating nutrient limited conditions that inhibit cyanobacteria growth.</div>
+		<div>Cyanotoxins</div>
+		<div>Application Approaches
+</div>
+		<div>Growth Curve</div>
+		<div>Chemical Treatment Methods</div>
+		<div>Actions a utility can take after a bloom occurs; typically target the late exponential or stationary growth phases.</div>
+		<div>General term describing aquatic unicellular and multicellular photosynthetic organisms; includes algae and cyanobacteria.</div>
+		<div>Grab
+Sampling
+</div>
+		<div>Lag phase: a period of adaptation during which the organisms adjust to culture conditions.
+
+Exponential phase: the period of cell division characterized by a predictable doubling of cell numbers; slope of the curve during the exponential phase is dependent upon speciesspecific intrinsic factors and the availability of resources.
+
+Stationary phase: At this stage, the cell growth rate slows or stops. Growth is inhibited by lack of resources and increases in waste production; cells tend to produce secondary metabolites.
+
+Death phase: the number of viable cells decreases; cell death is due to resource depletion and waste production. Intracellular contents are released.</div>
+		<div>Phytoplankton</div>
+		<div>A mass of algae floating as a visible mat, usually at the surface of the water or attached to benthic sediments.</div>
+		<div>High
+</div>
+		<div>Dissolved oxygen.</div>
+		<div>Reactive Control Strategy</div>
+		<div>Source Control Decision Tree</div>
+		<div>Water quality monitoring tools that alert utilities of a biological event (Tier 1), confirm the presence of cyanobacteria (Tier 2), and confirm metabolite production (Tier 3). Parameters are often assigned a site specific threshold to trigger additional monitoring/treatment or source control response.</div>
+		<div>TON</div>
+		<div>Technology</div>
+		<div>Biomanipulation</div>
+		<div>RFU</div>
+		<div>Cost</div>
+		<div>Management Options for Cyanobacteria</div>
+		<div>Algal Mat</div>
+		<div>Conclusions</div>
+		<div>DO</div>
+		<div>Drones</div>
+		<div>Benthic Decision Tree
+</div>
+		<div>Early Warning System</div>
+		<div>Turnaround time</div>
+		<div>Target</div>
+		<div>Unattached aquatic organisms whose movement is subject to wind and currents. Planktonic blooms may consist of cyanobacteria that can regulate their buoyancy in the water column. (Below: Planktonic blooms in surface water)</div>
+		<div>Products of metabolic reactions produced by cyanobacteria cells and may include cyanotoxins as well as taste and odor compounds.</div>
+		<div>Relative Fluorescence Number</div>
+		<div>Conclusions and Future Perspectives</div>
+		<div>Pelagic or Benthic</div>
+		<div>Metabolites</div>
+		<div>Planktonic/Pelagic</div>
+		<div>Accuracy</div>
+		<div>RFU</div>
+		<div>Cyanobacterial challenges are increasing in frequency and severity. The utility survey and literature review provided insight into how utilities monitor and manage cyanobacteria while highlighting additional research needs. Strategic future needs include:
+
+Reliable, cost effective, and easy to use monitoring tools for the detection of cyanobacteria and their metabolites
+
+Real time cyanotoxin and T&O compound methodologies
+
+Accurate predictive modeling that forecasts the intensity and extent of cyanobacterial blooms in water sources
+
+
+
+Guidance on the implementation of source control strategies based on source and system characteristics
+
+Guidance on source water protection initiatives to minimize external nutrient loading
+
+Review of the effectiveness of sonication for cyanobacteria control in source waters
+
+Cyanobacteria population control in large water resources
+
+Guidelines for the monitoring of benthic cyanobacteria
+
+Integration of cyanobacteria management into long term planning with a focus on proactive strategies for the future</div>
+		<div>The process of nutrient (nitrogen (N) and phosphorous (P)) enrichment in surface water that leads to the rapid increase in production of algae and cyanobacteria.</div>
+		<div>Interference</div>
+		<div>Eutrophication</div>
+		<div>The light-harvesting pigment in cyanobacterial cells that is an accessory pigment to chlorophyll.</div>
+		<div>Actions a utility can take before a bloom occurs; typically targets the lag or early exponential growth phases.</div>
+		<div>Some cyanobacteria can generate metabolites (geosmin and 2-methylisoborneol (MIB) that result in an earthy, musty smell or taste in water.</div>
+		<div>Phycocyanin</div>
+		<div></div>
+		<div>Proactive Control Strategy</div>
+		<div>Taste & Odor (T&O)</div>
+		<div>Note: The taxonomy of cyanobacteria is in constant evolution. While most utilities still use Anabaena to refer to pelagic cyanobacteria, this genus has been split in several genera and its meaning has changed. Currently, the genus Anabaena corresponds strictly to benthic species. To avoid confusion in this document, the authors refer to Anabaena as benthic species and to Dolichospermum (ex: Anabaena) for the pelagic species studied herein.
+</div>
+		<div>Management Options</div>
+		<div>Remote Sensing
+</div>
+		<div>Threshold Odor Number</div>
+		<div>Management
+Options</div>
+		<div>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse  dolore eu feugiat nulla facilisis at vero eros et accumsan et  qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</div>
+		<div>Subbmarine</div>
+		<div>What is the Goal of Your Source Water Monitoring?</div>
+		<div>Short
+</div>
+		<div>Mechanical control methods include sediment dredging to remove nutrients, artificial mixing to prevent thermal stratification, and aeration. Aeration increases dissolved oxygen and inhibits the release of Mn2+, Fe2+, and P from sediments. Sonication uses high frequency sound waves to collapse gas vacuoles, impairing the ability of cyanobacteria to migrate through the water column. The reported success of sonication is inconsistent; it appears to be more applicable in engineered reservoirs and dependent on site specific characteristics. Biological control methods limit growth of cyanobacteria through biomanipulation and natural system restoration.</div>
+		<div>Cyanobacteria
+</div>
+		<div>Benthic</div>
+		<div>Adenosine Triphosphate (ATP)</div>
+		<div>EWS Tools
+Summary Table
+</div>
+		<div>Benthic Occurrence In Surface Waters
+</div>
+		<div>Survey Response Graphic</div>
+		<div>Flow through at intake</div>
+		<div>Attached to Aquatic Plants</div>
+		<div>Glossary and Terms</div>
+		<div>Source Water
+Monitoring</div>
+		<div>Introduction</div>
+		<div>Utility Experiences</div>
+		<div>Eric Wert, Ph.D., P.E. - Southern Nevada Water Authority
+Arash Zamyadi, Ph.D. - Water Research Australia
+Virginie Gaget, Ph.D. - University of Adelaide
+Christine Owen - Hazen and Sawyer
+Faith Kibuye, Ph.D. - Southern Nevada Water Authority
+Ron Hofmann, Ph.D. - University of Toronto
+Husein Almuhtaram, Ph.D. - University of Toronto</div>
+		<div>Monitoring Goal</div>
+		<div>Authors and Contacts</div>
+		<div>Floating Mats</div>
+		<div>Attached to Rocks</div>
+		<div>Contacts</div>
+		<div>Glossary</div>
+		<div>Probes
+</div>
+		<div>Frequency of Monitoring</div>
+		<div>9</div>
+		<div>Automated cell imaging</div>
+		<div>HIGHLIGHTS</div>
+		<div>Parameters Monitored</div>
+		<div>3</div>
+		<div>Attached to Structures</div>
+		<div>Sensitivity of Analytical Instruments</div>
+		<div>Cyanobacterial blooms challenge utilities in their commitment to producing high-quality drinking water due to the potential production of secondary metabolites such as cyanotoxins or taste and odor (T&O) compounds. When producing these metabolites, cyanobacterial blooms are commonly referred to as harmful algal blooms (HABs).
+
+This manual offers guidance on early detection and source water management strategies to minimize the risk associated with cyanobacteria blooms. Information presented here is a synthesis of project findings from a survey of drinking water utilities with bench- and field-scale evaluations.
+
+The manual provides utilities with strategies that can be used to (1) create a structured early warning monitoring program using a tiered approach, (2) evaluate benthic sources of cyanobacteria, and (3) evaluate methods to prevent or control blooms in source water supplies.</div>
+		<div>11</div>
+		<div>Utility
+Experiences</div>
+		<div>Treatment Residuals</div>
+		<div>12</div>
+		<div>Utility Guidance Manual for the
+Monitoring and Management
+of Cyanobacterial Blooms
+
+</div>
+		<div>Background Water Quality Interferences</div>
+		<div>Monitoring
+Goal</div>
+		<div>Analytical Turnaround Times</div>
+		<div>Early Warning
+Systems</div>
+		<div>ATP</div>
+		<div>NOTE: Utilities may have selected more than one response</div>
+		<div>13</div>
+		<div>Aspects of Early Warning Important to Utilities</div>
+		<div>Adenosine Triphosphate (ATP)</div>
+		<div>A survey of 35 drinking water utilities across the United States, Canada, and Australia identified common practices with early warning tools and source control strategies to manage cyanobacteria or reduce nutrient concentrations at the source. These charts summarize the different aspects of early warning and source control that utilities find essential. Analytical turnaround times and frequency of monitoring warrant the greatest consideration for inclusion in early warning programs. Release of intracellular metabolites, environmental impacts of algaecides, and nutrient deposition are top considerations when implementing an engineered source control strategy.</div>
+		<div>Algae</div>
+		<div>Utility Experiences With Monitoring Cyanobacteria</div>
+		<div>Algal Mat</div>
+		<div>Environmental Impacts</div>
+		<div>Benthic</div>
+		<div>20</div>
+		<div>Cyanobacteria</div>
+		<div>Release of Metabolites</div>
+		<div>Chlorophyll-a
+extraction</div>
+		<div>Cyanotoxins</div>
+		<div>NGS</div>
+		<div>DO</div>
+		<div>Early
+Warning System</div>
+		<div>Eutrophication</div>
+		<div>Growth Curve</div>
+		<div>Aspects of Source Control Important to Utilities</div>
+		<div>Metabolites</div>
+		<div>Phycocyanin</div>
+		<div>Phytoplankton</div>
+		<div>Mechanical Treatment Methods</div>
+		<div>Microscopy</div>
+		<div>Grab vs. Online Monitoring Techniques</div>
+		<div>DOWNLOAD COPY OF MANUAL
+</div>
+		<div>qPCR</div>
+		<div>Planktonic/ Pelagic</div>
+		<div>Satellite-Hyperspectral
+</div>
+		<div>HAZEN INTERACTIVES
+</div>
+		<div>CYANOBACTERIAL BLOOMS MANUAL</div>
+
+	</div>
+
+	<!-- end text content: -->
+
+  </body>
+</html>
